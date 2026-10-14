@@ -91,6 +91,8 @@ public class patterns {
 //            System.out.println();
 //        }
 
+
+        // this is the see carefull while go in for loop
         System.out.println("HOLLOW RIGHT ANGLED TRIANGLE");
         for (int hrai = 1; hrai <= 5; hrai++) {
             if (hrai == 1 || hrai == 2 || hrai == 5) {
