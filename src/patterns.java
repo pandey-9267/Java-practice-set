@@ -112,6 +112,50 @@ public class patterns {
             System.out.println();
         }
 
+        System.out.println("HOLLED PYRAMID");
+        for (int hpi = 1; hpi <= 5; hpi++) {
+            for (int hpj = 1; hpj <= 5 - hpi; hpj++) {
+                System.out.print("  ");
+            }
+            if (hpi == 1 || hpi == 5) {
+                for (int hpj = 1; hpj <= 2 * hpi - 1; hpj++) {
+                    System.out.print("* ");
+                }
+            }
+            else {
+                // one star
+                System.out.print("* ");
+
+                for (int hpj = 1; hpj <= 2 * hpi - 3; hpj++) {
+                    System.out.print("  ");
+                }
+                // one star
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("SOLID DIAMOND");
+        for (int di = 1; di <= 4; di++) {
+            for (int dj = 1; dj <= 4 - di; dj++) {
+                System.out.print("  ");
+            }
+            for (int dj = 1; dj <= 2 * di - 1; dj++) {
+                System.out.print("* ");
+            }
+            System.out.println(); // CHANGED: end the upper row here
+        }
+// CHANGED: lower half starts after the upper loop
+        for (int di = 1; di <= 3; di++) { // CHANGED: 3 rows to avoid repeating the widest row
+            for (int dj = 1; dj <= di; dj++) { // CHANGED: indentation
+                System.out.print("  ");
+            }
+            // CHANGED: use di in the formula, not dj
+            for (int dj = 1; dj <= 2 * (4 - di) - 1; dj++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
 
 
 
