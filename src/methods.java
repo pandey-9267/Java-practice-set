@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class methods {
 
 //        example of methods working
@@ -11,15 +9,29 @@ public class methods {
             }
         }
 
+
 //        what is parameters and this is also a example of void type
         static void sum(int x, int y) { // this is parameters
             System.out.println("SUM = " + (x + y));
         }
 
+
 //        non-void return type example
         static int add(int q, int w) {
             int sum = q + w;
             return sum;
+        }
+
+
+        // what is variable scope ??
+//        done
+
+
+        // example of call by value
+        static void solve (int num) {
+            System.out.println("inside solve : " + num);
+            num *= 10;
+            System.out.println("inside solve : " + num);
         }
 
         static void main () {
@@ -28,13 +40,20 @@ public class methods {
             print_2_table();
             System.out.println("this is the end to the table");
 
+
 //            calling the parameter example
             sum(4,14);  // this arguments
+
 
             //        calling the non-void return type
             int result = add(5,6);
             System.out.println("Sum = " + result);
+
+
+            // calling call by value example
+            int num = 5;
+            System.out.println("inside main : " + num);
+            solve(num);
+            System.out.println("inside mian : " + num);
         }
-
-
 }
