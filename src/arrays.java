@@ -57,7 +57,7 @@ public class arrays {
 //            sum += arrs[i];
 //        }
 //        System.out.println(sum);
-
+//---------------------------------------------------------------
 //        System.out.println("do the sum of the array elements");
 //        int arrm[] = {6,7,8,9};
 //        int mul = 1;
@@ -66,7 +66,7 @@ public class arrays {
 //            mul *= val;
 //        }
 //        System.out.println(mul);
-
+//------------------------------------------------------------------
 //        System.out.println("Find the max value in the array");
 //        int arrmax[] = {4,5,-9,7,6,-47,34};
 //        int n = arrmax.length;
@@ -77,7 +77,7 @@ public class arrays {
 //            }
 //        }
 //        System.out.println(max);
-
+//----------------------------------------------------------------
 //        System.out.println("Find the min value in the array");
 //        int arrmin[] = {4,5,-9,7,1,-47,34};
 //        int n = arrmin.length;
@@ -122,7 +122,7 @@ public class arrays {
 //            }
 //            System.out.println();
 //        }
-
+//--------------------------------------------------------------------------
 //        take input in 2D array
 //        int brr[][] = new int[2][3];
 //        Scanner sc = new Scanner(System.in);
@@ -139,6 +139,9 @@ public class arrays {
 //            }
 //            System.out.println();
 //        }
+//-----------------------------------------------------------
+//        Practice
+
 
 
     }
