@@ -58,7 +58,7 @@ public class arrays {
 //        }
 //        System.out.println(sum);
 //---------------------------------------------------------------
-//        System.out.println("do the sum of the array elements");
+//        System.out.println("do the multiple of the array elements");
 //        int arrm[] = {6,7,8,9};
 //        int mul = 1;
 //        int n = arrm.length;
@@ -114,7 +114,7 @@ public class arrays {
 //        int rowlen = brr.length;
 //        // int collen = brr[i].length;    // us this if the row and col are same
 //        for (int i = 0; i < rowlen; i++){
-//            // us this is the col is not constant and also can use in both case if the col is equal to row then also usr this
+//            // use this is the col is not constant and also can use in both case if the col is equal to row then also use this
 //            // but remember it must be on the col loop always
 //            int collen = brr[i].length;
 //            for (int j = 0; j < collen; j++) {
@@ -140,7 +140,52 @@ public class arrays {
 //            System.out.println();
 //        }
 //-----------------------------------------------------------
-//        Practice
+//        2D Practice
+
+//        System.out.println("do the sum of the array elements");
+//        int arr[][]  = {{1,2,3}, {1,2,3}};
+//        int sum  = 0;
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = 0; j < arr[i].length; j++) {
+//                sum += arr[i][j];
+//            }
+//        }
+//        System.out.println(sum);
+////----------------------------------------------------------------------
+//        System.out.println("do the multiple of the array elements");
+//        int arr[][] = {{1,2,3},{1,2,3}};
+//        int  mul = 1;
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = 0; j < arr[i].length; j++) {
+//                mul *= arr[i][j];
+//            }
+//        }
+//        System.out.println(mul);
+//-------------------------------------------------------------------------
+//        System.out.println("Find the max value in the array");
+//        float arr[][] = {{1,5,3,7},{0.5f,4,3,9,7,45}};
+//        float maxi = arr[0][0];
+//        for (float i = 0; i < arr.length; i++) {
+//            for (float j = 0; j < arr[(int) i].length; j++) {
+//                if (maxi < arr[(int) i][(int) j]) {        // here force fully change the type
+//                    maxi = arr[(int) i][(int) j];
+//                }
+//            }
+//        }
+//        System.out.println(maxi);
+//-------------------------------------------------------------------------
+//        System.out.println("Find the max value in the array");
+//        float arr[][] = {{1,5,3,7},{0.5f,4,3,9,7,45}};
+//        float mini = arr[0][0];
+//        for (float i = 0; i < arr.length; i++) {
+//            for (float j = 0; j < arr[(int) i].length; j++) {
+//                if (mini < arr[(int) i][(int) j]) {        // here force fully change the type
+//                    mini = arr[(int) i][(int) j];
+//                }
+//            }
+//        }
+//        System.out.println(mini);
+
 
 
 
