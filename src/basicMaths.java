@@ -53,7 +53,7 @@ public class basicMaths {
 //        int originalNum = num;
 //        int revNum = 0;
 //
-//        // add this is the munber is less then 0 or goes in the negative it show false
+//        // add this is the number is less then 0 or goes in the negative it show false
 //        if (num < 0) {  // ADD HERE
 //            System.out.println("This number is not a palindrome " + originalNum);
 //            return false;
@@ -73,7 +73,41 @@ public class basicMaths {
 //        }
 //    }
 //------------------------------------------------------------------------------------------
-    //
+//    //check the number is prime or not
+//    static boolean isPrimeOrNot(int num){
+//        for (int i = 2; i <= num-1; i++) {
+////            use this for better time complexity
+////        for (int i = 2 ; i * i <= num; i ++) {
+//            if (num % i == 0){
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
+//--------------------------------------------------------------------
+//    // GCD of number (HCF)
+//    static int getGCD(int a, int b) {
+//
+//        while(b != 0) {
+//            int ofValueOfb = b;
+//            b = a%b;
+//            a = ofValueOfb;
+//        }
+//        int ans = a;
+//        return ans;
+//    }
+//-------------------------------------------------------------
+//    static int getLCM(int a, int b) {
+//        int gcd = getGCD(a,b);
+//        int prod = a*b;
+//        int lcm = prod/gcd;
+//        return lcm;
+//    }
+
+
+
+
+
 
 
     static void main() {
@@ -102,7 +136,16 @@ public class basicMaths {
 //        boolean ans = isPalindrome(-121);
 //        System.out.println(ans);
 //------------------------------------------------------
-        //
+//        //check the number is prime or not
+//        int num = 45;
+//        System.out.println(isPrimeOrNot(num));
+//------------------------------------------------------
+//        // GCD of number
+//        System.out.println(getGCD(18,12));
+//------------------------------------------------------
+//        // GCD of number
+//        System.out.println(getLCM(18,12));
+
 
 
     }
