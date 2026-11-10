@@ -73,17 +73,17 @@ public class basicMaths {
 //        }
 //    }
 //------------------------------------------------------------------------------------------
-//    //check the number is prime or not
-//    static boolean isPrimeOrNot(int num){
-//        for (int i = 2; i <= num-1; i++) {
-////            use this for better time complexity
-////        for (int i = 2 ; i * i <= num; i ++) {
-//            if (num % i == 0){
-//                return false;
-//            }
-//        }
-//        return true;
-//    }
+    //check the number is prime or not
+    static boolean isPrimeOrNot(int num){
+        for (int i = 2; i <= num-1; i++) {
+         //   se this for better time complexity
+         // for (int i = 2 ; i * i <= num; i ++) {
+            if (num % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
 //--------------------------------------------------------------------
 //    // GCD of number (HCF)
 //    static int getGCD(int a, int b) {
@@ -103,9 +103,50 @@ public class basicMaths {
 //        int lcm = prod/gcd;
 //        return lcm;
 //    }
-
-
-
+//-------------------------------------------------------------
+//       // Armstrong number
+//      static boolean armstrongNo(int num) {
+//
+//          int originalNO = num;
+//          int sum = 0;
+//
+//          if (num < 0){
+//              return false;
+//          }
+//
+//          while (num != 0) {
+//              int digit = num % 10;
+//              sum = sum + (digit*digit*digit);
+//              num = num / 10;
+//          }
+//
+//          if (originalNO == sum) {
+//              return true;
+//          }
+//          else {
+//              return false;
+//          }
+//      }
+//-------------------------------------------------------------
+//        // find all divisors or perfect number
+//        static boolean checkPerfectNumber(int num) {
+//            int sum = 1;
+//            for (int i = 2; i * i <= num; i ++) {
+//                if (num % i == 0) {
+//                    int firstFactor = i;
+//                    int secondFactor = num/i;
+//                    sum = sum + firstFactor + secondFactor;
+//                }
+//            }
+//            if (sum == num) {
+//                return true;
+//            }
+//            else {
+//                return false;
+//            }
+//        }
+//-------------------------------------------------------------
+        // count primes
 
 
 
@@ -136,17 +177,25 @@ public class basicMaths {
 //        boolean ans = isPalindrome(-121);
 //        System.out.println(ans);
 //------------------------------------------------------
-//        //check the number is prime or not
-//        int num = 45;
-//        System.out.println(isPrimeOrNot(num));
+        //check the number is prime or not
+        int num = 3;
+        System.out.println(isPrimeOrNot(num));
 //------------------------------------------------------
 //        // GCD of number
 //        System.out.println(getGCD(18,12));
 //------------------------------------------------------
 //        // GCD of number
 //        System.out.println(getLCM(18,12));
-
+//------------------------------------------------------
+//        // Armstrong number
+//        System.out.println(armstrongNo(-153));
+//------------------------------------------------------
+//        // find all divisors or perfect number
+//        System.out.println(checkPerfectNumber(1));
+//------------------------------------------------------
+        // count primes
 
 
     }
+
 }
